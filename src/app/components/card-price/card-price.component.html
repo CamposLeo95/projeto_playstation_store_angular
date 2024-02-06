@@ -15,8 +15,9 @@
 	<div class="card-price__infos">
 		<span class="order">pre-order</span>
 		<div class="card-price__titles">
-			<span>{{game}} - </span>
-			<span *ngFor="let plataform of plataforms">
+			<span>{{game}}</span>
+			<span class="card-price__plataform"> - </span>
+			<span *ngFor="let plataform of plataforms" class="card-price__pataform">
 				{{plataform}}
 			</span>
 		</div>

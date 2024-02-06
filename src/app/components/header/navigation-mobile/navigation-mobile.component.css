@@ -1,0 +1,23 @@
+.navigation-mobile__container{
+	width: 100%;
+	padding: 8px 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navigation-mobile__icons{
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.navigation-mobile__container > img{
+	margin-left: 40px;
+}
+
+@media (min-width:768px){
+	.navigation-mobile__container{
+		display: none;
+	}
+}

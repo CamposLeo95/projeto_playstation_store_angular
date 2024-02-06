@@ -17,7 +17,8 @@ import { FooterComponent } from './components/footer/footer.component';
 
 import { register } from 'swiper/element/bundle';
 import { CarouselComponent } from './components/carousel/carousel.component';
-import { CardPriceComponent } from './components/card-price/card-price.component'
+import { CardPriceComponent } from './components/card-price/card-price.component';
+import { NavigationMobileComponent } from './components/header/navigation-mobile/navigation-mobile.component'
 
 register()
 
@@ -34,6 +35,7 @@ register()
     FooterComponent,
     CarouselComponent,
     CardPriceComponent,
+    NavigationMobileComponent,
   ],
   imports: [
     BrowserModule,

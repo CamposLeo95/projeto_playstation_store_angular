@@ -1,38 +1,43 @@
 .menu-bar__container{
 	position: relative;
-	width: 100vw;
+	width: 100%;
 	display: flex;
+	flex-direction: column;
 	position: sticky;
 	top: 0px;
 	bottom: 30px;
 	background-color: #ffffff;
 	z-index: 999;
-	height: 60px;
 	box-shadow: 0px 8px 15px  rgba(194, 194, 194, 0.5);
-	align-items: center;
+	min-height: 60px;
+	gap: 10px;
+	padding: 10px 0;
+	align-items: flex-start;
 }
 
 .menu-bar__logo{
 	margin-left: 30px;
-	position: absolute;
 	cursor: pointer;
+
 }
 
 .menu-bar__item{
 	display: flex;
+	min-height: 30px;
+	/* width: 100%; */
 	margin:auto;
-	align-items: center;
-	gap: 4px;
+	gap: 24px;
 	list-style: none;
+
 }
 
 .menu-bar__item > li {
-	/* margin-right: 15px; */
 	cursor: pointer;
-	width: 90px;
+	width: 100px;
 	transition: ease-in 0.2s;
-	text-align: center;
-
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .menu-bar__item > li:hover {
@@ -49,9 +54,26 @@
 }
 
 .menu-bar__item-active{
-	width: 105px;
 	border-radius: 20px;
-	padding: 3px 0px;
 	background-color: rgb(218, 218, 218);
+}
+
+@media (min-width: 768px) {
+	.menu-bar__container{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.menu-bar__item{
+		width: 100%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.menu-bar__item{
+		justify-content: center;
+		margin-right: 150px;
+	}
 }
 

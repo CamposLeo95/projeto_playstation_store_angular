@@ -22,4 +22,13 @@ export class CarouselComponent {
 	@Input()
 	title:string = "Teste"
 
+	config = {
+			350: {
+        slidesPerView: 2,
+      },
+    	768: {
+        slidesPerView: 3,
+      },
+  };
+
 }

@@ -8,9 +8,9 @@ import { Component, Input } from '@angular/core';
 export class CardImageComponent {
 
 	@Input()
-	wImage:string = "400px"
+	wImage:string = ""
 	@Input()
-	hImage: string = "400px"
+	hImage: string = ""
 	@Input()
 	mTop:string = "15px"
 	@Input()

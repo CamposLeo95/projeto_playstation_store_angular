@@ -1,6 +1,6 @@
 .card-price__container{
-	width: 320px;
-	margin-left: 50px;
+	width: 150px;
+	margin-left: 15px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -52,9 +52,29 @@
 .card-price__titles{
 	width: 100%;
 	display: flex;
-	gap: 5px;
+}
+
+.card-price__pataform{
+	display: none;
 }
 
 .card-price__price{
 	color: gray;
+}
+
+@media (min-width: 768px){
+	.card-price__container{
+		width: 250px;
+	}
+
+	.card-price__pataform{
+		display: block;
+	}
+}
+
+@media (min-width: 1024px){
+	.card-price__container{
+		width: 350px;
+		margin-left: 40px;
+	}
 }

@@ -1,6 +1,6 @@
 .navigation__container{
 	width: 100%;
-	display: flex;
+	display: none;
 	align-items: center;
 	justify-content: space-between;
 	padding: 7px 15px;
@@ -38,6 +38,12 @@
 
 .navigation__search-icon{
 	color: rgb(66, 66, 66);
+}
+
+@media (min-width:768px){
+	.navigation__container{
+		display: flex;
+	}
 }
 
 
