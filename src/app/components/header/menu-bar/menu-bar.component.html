@@ -2,11 +2,23 @@
 	<div class="menu-bar__logo">
 		<img src="assets/ps-logo.png" alt="" width="140px">
 	</div>
+	<swiper-container
+		[slidesPerView] = 3
+		[enabled] = true
+		class="menu-bar__item__carousel"
+	>
+	<swiper-slide class="menu-bar__item-active swipper"><a>Novidades</a></swiper-slide>
+	<swiper-slide class="swipper"><a>Coleções</a></swiper-slide>
+	<swiper-slide class="swipper"><a>Ofertas</a></swiper-slide>
+	<swiper-slide class="swipper"><a>Assinaturas</a></swiper-slide>
+	<swiper-slide class="swipper"><a>Navegar</a></swiper-slide>
+
+</swiper-container>
 		<ul class="menu-bar__item">
-			<li class="menu-bar__item-active"><a href="">Novidades</a></li>
-			<li><a href="">Coleções</a></li>
-			<li><a href="">Ofertas</a></li>
-			<li><a href="">Assinaturas</a></li>
-			<li><a href="">Navegar</a></li>
+			<li class="menu-bar__item-active"><a>Novidades</a></li>
+			<li><a>Coleções</a></li>
+			<li><a>Ofertas</a></li>
+			<li><a>Assinaturas</a></li>
+			<li><a>Navegar</a></li>
 		</ul>
 </div>
