@@ -1,23 +1,27 @@
 <div class="card-price__container">
 	<div class="card-price__image">
 		<app-card-image
-			[pathImg]="listGames.img"
+			[pathImg]="imgGame"
 			wImage="100%"
 			hImage="100%"
 			mTop="0px"
 		/>
 		<div class="card-price__image__plataforms">
-			<span>PS4</span>
-			<span>PS5</span>
+			<span *ngFor="let plataform of plataforms">
+				{{plataform}}
+			</span>
 		</div>
 	</div>
 	<div class="card-price__infos">
 		<span class="order">pre-order</span>
 		<div class="card-price__titles">
-			<span>Tekken 8 - PS4 e PS5</span>
+			<span>{{game}} - </span>
+			<span *ngFor="let plataform of plataforms">
+				{{plataform}}
+			</span>
 		</div>
 		<div class="card-price__price">
-			<span>R$349,90</span>
+			<span>R${{price}}</span>
 		</div>
 	</div>
 </div>

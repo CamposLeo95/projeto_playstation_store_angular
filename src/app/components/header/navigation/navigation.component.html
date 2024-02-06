@@ -2,11 +2,13 @@
 
 	<div class="navigation__left">
 		<div class="navigation__logo">
-			<img src="assets/ps-micro-logo.png" alt="" width="30px">
+			<img src="assets/ps-micro-logo.png" alt="" width="25px">
 		</div>
 		<div class="navigation__itens" *ngFor="let item of navItens">
-				<p>{{item}}</p>
-				<mat-icon class="navigation__arrow-icon">keyboard_arrow_down</mat-icon>
+				<span>{{item}}</span>
+				<mat-icon class="navigation__arrow-icon" style="font-size: 15px;">
+					keyboard_arrow_down
+				</mat-icon>
 		</div>
 
 	</div>

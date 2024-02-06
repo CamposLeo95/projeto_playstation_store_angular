@@ -14,6 +14,7 @@
 	padding: 5px;
 	display: flex;
 	align-items: center;
+	transition: ease-in-out 0.1s;
 }
 
 .card-price__image:hover{

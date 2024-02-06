@@ -1,6 +1,14 @@
 import { Component, Input } from '@angular/core';
 
 
+
+interface GameProps {
+	img: string
+	game: string
+	price: number
+	plataform: string[]
+}
+
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
@@ -9,7 +17,7 @@ import { Component, Input } from '@angular/core';
 export class CarouselComponent {
 
   @Input()
-  listGames:object[] = [];
+  games:GameProps[] = [];
 
 	@Input()
 	title:string = "Teste"

@@ -1,13 +1,15 @@
 
 	<app-banner
-		imgBanner="assets/banner_main.jpg"
+		imgBanner="assets/suicide.png"
 		titleBanner="Ofertas de Ano Novo"
 		contentBanner="Entre no ano novo do jeito que pretende passar todos os dias dele: cercado de jogos geniais por preços inacreditáveis!"
 		textButton="Economize Já"
 	/>
 	<div class="home__categories">
 		<div *ngFor="let path of pathsImagesGames">
-			<app-card-image pathImg={{path}}/>
+			<app-card-image
+				pathImg={{path.img}}
+				/>
 		</div>
 	</div>
 
@@ -24,9 +26,9 @@
 		textButton="Saiba mais"
 	/>
 
-	<app-carousel [pathsImages]="pathsImagesGames" title="Lançamentos" />
+	<app-carousel [games]="pathsImagesGames" title="Lançamentos" />
 
-	<app-carousel [pathsImages]="pathsImagesGames" title="Demonstrações" />
+	<app-carousel [games]="pathsImagesGames" title="Demonstrações" />
 
 	<div class="home__categories">
 		<div *ngFor="let path of pathsImagesCategorys">

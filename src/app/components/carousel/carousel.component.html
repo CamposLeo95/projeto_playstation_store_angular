@@ -7,8 +7,15 @@
 	class="swipper__carousel"
 	[loop] = true
 >
-  <swiper-slide *ngFor="let list of listGames" >
-		<app-card-price [pathImg]="listGames"/>
+  <swiper-slide *ngFor="let game of games" >
+		<app-card-price
+			[imgGame]="game.img"
+			[game]="game.game"
+			[price]="game.price"
+			[plataforms]="game.plataform"
+
+			/>
 	</swiper-slide>
+
 
 </swiper-container>

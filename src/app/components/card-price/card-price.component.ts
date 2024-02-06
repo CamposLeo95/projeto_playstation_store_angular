@@ -1,9 +1,5 @@
 import { Component, Input } from '@angular/core';
 
-interface Games {
-	img: string
-}
-
 @Component({
   selector: 'app-card-price',
   templateUrl: './card-price.component.html',
@@ -12,6 +8,17 @@ interface Games {
 export class CardPriceComponent {
 
 	@Input()
-	listGames:Games[] = []
+	imgGame:string = ""
+
+	@Input()
+	game: string= ""
+
+	@Input()
+	price: number = 0
+
+	@Input()
+	plataforms: string[]= [""]
+
+
 
 }
