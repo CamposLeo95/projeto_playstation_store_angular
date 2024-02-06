@@ -1,0 +1,18 @@
+<div class="navigation__container">
+
+	<div class="navigation__left">
+		<div class="navigation__logo">
+			<img src="assets/ps-micro-logo.png" alt="" width="30px">
+		</div>
+		<div class="navigation__itens" *ngFor="let item of navItens">
+				<p>{{item}}</p>
+				<mat-icon class="navigation__arrow-icon">keyboard_arrow_down</mat-icon>
+		</div>
+
+	</div>
+
+	<div class="navigation__right">
+		<app-main-button />
+		<mat-icon class="navigation__search-icon">search</mat-icon>
+	</div>
+</div>

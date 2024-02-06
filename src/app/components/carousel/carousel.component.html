@@ -1,0 +1,14 @@
+<div class="carousel__title">
+	<h2>{{title}}</h2>
+</div>
+<swiper-container
+	[slidesPerView] = 4
+	[enabled] = true
+	class="swipper__carousel"
+	[loop] = true
+>
+  <swiper-slide *ngFor="let list of listGames" >
+		<app-card-price [pathImg]="listGames"/>
+	</swiper-slide>
+
+</swiper-container>

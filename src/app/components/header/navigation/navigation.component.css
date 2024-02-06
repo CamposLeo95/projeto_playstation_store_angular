@@ -1,0 +1,44 @@
+.navigation__container{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px 15px;
+	color: rgb(138, 138, 138);
+	transition: ease-in-out 0.2s;
+}
+
+.navigation__container:hover{
+	color: rgb(66, 66, 66);
+}
+
+.navigation__left{
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	font-size: 12px;
+
+}
+
+.navigation__itens{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	cursor: pointer;
+}
+
+.navigation__itens:hover {
+	color: rgb(0, 127, 231);
+}
+
+.navigation__right{
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.navigation__search-icon{
+	color: rgb(66, 66, 66);
+}
+
+

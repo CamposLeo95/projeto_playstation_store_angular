@@ -1,0 +1,39 @@
+
+	<app-banner
+		imgBanner="assets/banner_main.jpg"
+		titleBanner="Ofertas de Ano Novo"
+		contentBanner="Entre no ano novo do jeito que pretende passar todos os dias dele: cercado de jogos geniais por preços inacreditáveis!"
+		textButton="Economize Já"
+	/>
+	<div class="home__categories">
+		<div *ngFor="let path of pathsImagesGames">
+			<app-card-image pathImg={{path}}/>
+		</div>
+	</div>
+
+	<app-banner
+		imgBanner="assets/ps-plus-banner.png"
+		titleBanner="Descobre o PlayStation Plus"
+		contentBanner="Aproveite centenas de jogos de PS5, PS4 e clássicos, modo multijogador online e mais benefícios imperdíveis."
+		textButton="Saiba mais"
+	/>
+
+	<app-banner
+		imgBanner="assets/playstation_stars.jpg"
+		contentBanner="Aproveite centenas de jogos de PS5, PS4 e clássicos, modo multijogador online e mais benefícios imperdíveis."
+		textButton="Saiba mais"
+	/>
+
+	<app-carousel [pathsImages]="pathsImagesGames" title="Lançamentos" />
+
+	<app-carousel [pathsImages]="pathsImagesGames" title="Demonstrações" />
+
+	<div class="home__categories">
+		<div *ngFor="let path of pathsImagesCategorys">
+			<app-card-image pathImg={{path}}/>
+		</div>
+	</div>
+
+
+
+

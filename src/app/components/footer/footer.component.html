@@ -1,0 +1,30 @@
+<div class="footer__container">
+	<div class="footer__logo">
+		<img src="assets/ps-micro-logo-white.png" alt="logo playstation" width="40px">
+		<div>
+			<mat-icon>place</mat-icon>
+			<p>País/região: Brasil</p>
+		</div>
+	</div>
+	<div class="footer__content">
+		<div class="footer__content_card" >
+			<p *ngFor="let item of listItensOne">
+				{{item}}
+			</p>
+		</div>
+		<div class="footer__content_card">
+			<p *ngFor="let item of listItensTwo">
+				{{item}}
+			</p>
+		</div>
+		<div class="footer__content_card">
+			<p *ngFor="let item of listItensThree">
+				{{item}}
+			</p>
+		</div>
+	</div>
+	<div class="footer__reservado">
+			<p>© 2024 Sony Interactive Entertainment Inc. Todos os direitos reservados.</p>
+	</div>
+
+</div>
